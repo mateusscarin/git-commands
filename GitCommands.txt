@@ -1,1 +1,20 @@
+*Inicializando repositório localmente*
 git init
+
+*Adicionando todas as pastas e arquivos*
+git add .
+
+*Comando para apontar onde o projeto será enviado*
+git remote add origin (aqui vai a localização do repositório - https...)
+
+*Relizando commit das pastas e arquivos*
+git commit -m "Mensagem"
+
+*Comando utilizado para subir as modificações/ projeto para uma branch específica*
+git push origin master
+
+*Comando utilizado para clonar um projeto do repositório localmente:*
+git clone (aqui vai a localização do repositório - https...)
+
+*Comando utilizado para buscar as modificações realizadas no projeto que foram enviadas para o repositório, utilizado bastante quando se tem um time trabalhando no projeto*
+git pull (aqui vai a localização do repositório - https...)
