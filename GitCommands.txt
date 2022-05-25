@@ -1,20 +1,124 @@
+HISTORICO
+*Mostra todos os commits, começando pelo mais novo*
+git log
+
+*Mostra todos os commits de forma reduzida*
+git log --oneline
+
+*Mostra as diferenças de alterações que foram feitas entre dois commits específicos*
+git diff <hashcommit> <hashcommit>
+
+
+ATUALIZAR E PUBLICAR
+**
+git remote -v
+
+**
+git remote show <remote>
+
+*Comando para apontar onde o projeto será enviado*
+git remote add <shortname> <url>
+
+*Comando utilizado para buscar as modificações remotas, mas não integre no HEAD*
+git fetch <remote>
+
+*Comando utilizado para buscar as modificações remotas, integrando diretamente no HEAD*
+git pull <remote> <branch>
+
+*Comando utilizado para subir as modificações/projeto para uma branch remota específica*
+git push <remote>
+
+*Exclua uma branch remota*
+git branch -dh <remote/branch>
+
+*Comando para subir suas tags*
+git push --tags
+
+
+MUDANÇAS LOCAIS
+**
+git status
+
+**
+git diff
+
+**
+git add .
+
+**
+git add -p <file>
+
+**
+git commit -a
+
+**
+git commit
+
+**
+git commit amend
+
+
+DESFAZER
+**
+git reset -hard HEAD
+
+**
+git checkout HEAD <file>
+
+**
+git revert <commit>
+
+**
+git reset -hard <commit>
+
+**
+git reset <commit>
+
+**
+git reset -keep <commit>
+
+
+BRANCHES
+**
+git branch -av
+
+**
+git checkout <branch>
+
+**
+git checkout <new-branch>
+
+**
+git branch -d <branch>
+
+**
+git tag <tag-name>
+
+
+FUNDIR E REBASE
+**
+git merge
+
+**
+git rebase <branch>
+
+**
+git rebase --abort
+
+**
+git rebase --continue
+
+**
+git mergetool
+
+**
+git add <resolved-file>
+git rm <resolved-file>
+
+
+OUTROS COMANDOS
 *Inicializando repositório localmente*
 git init
 
-*Adicionando todas as pastas e arquivos*
-git add .
-
-*Comando para apontar onde o projeto será enviado*
-git remote add origin (aqui vai a localização do repositório - https...)
-
-*Relizando commit das pastas e arquivos*
-git commit -m "Mensagem"
-
-*Comando utilizado para subir as modificações/ projeto para uma branch específica*
-git push origin master
-
 *Comando utilizado para clonar um projeto do repositório localmente:*
 git clone (aqui vai a localização do repositório - https...)
-
-*Comando utilizado para buscar as modificações realizadas no projeto que foram enviadas para o repositório, utilizado bastante quando se tem um time trabalhando no projeto*
-git pull (aqui vai a localização do repositório - https...)
