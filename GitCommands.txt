@@ -54,8 +54,11 @@ git commit -a
 **
 git commit
 
-**
-git commit amend
+*Comando para corrigir pequenos erros*
+git commit --amend
+
+*Comando para renomear a mensagem do último commit*
+git commit --amend -m "{nova-mensagem-commit}"
 
 
 DESFAZER
